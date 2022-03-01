@@ -1,0 +1,17 @@
+<table class="table table-bordered table-striped table-sm">
+    <thead>
+        <tr>
+            <th>ID-SHOP</th>
+            <th>NAME-SHOP</th>
+            <th>REGION-CODE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let shop of shops"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+            <td>{{shop.id_shop}}</td>
+            <td>{{shop.name_shop}}</td>
+            <td>{{shop.region_code}}</td>
+        </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,16 @@
+<select (change) = "onChange($event)" >
+    <option value = "null" disabled>SELECT SHOP</option>
+    <option *ngFor="let shop of shops" value ={{shop.id_shop}}>{{shop.name_shop}}</option><br>
+</select>
+ <br>
+ <br>
+<form [formGroup]="shopsFormToUpdate" (ngSubmit)="updateShop()">
+    Id_Shop: <input readOnly formControlName="id_shop"> <br>
+    <br>
+    Name_Shop: <input formControlName="name_shop"> <br>
+    <br>
+    Region_Code: <input formControlName="region_code"> <br>
+    <br>
+    <button type="submit">UPDATE ITEM</button> 
+</form> 
+

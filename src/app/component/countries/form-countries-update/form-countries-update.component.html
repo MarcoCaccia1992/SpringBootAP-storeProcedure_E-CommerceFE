@@ -1,0 +1,16 @@
+<select (change) = "onChange($event)" >
+    <option value = "null" disabled>SELECT COUNTRY</option>
+    <option *ngFor="let country of countries" value ={{country.id_country}}>{{country.name_country}}</option><br>
+</select>
+ <br>
+ <br>
+<form [formGroup]="countriesFormToUpdate" (ngSubmit)="updateCountry()">
+    Id_Country: <input readOnly formControlName="id_country"> <br>
+    <br>
+    Name_Country: <input formControlName="name_country"> <br>
+    <br>
+    Acronym_Shop: <input formControlName="acronym_shop"> <br>
+    <br>
+    <button type="submit">UPDATE ITEM</button> 
+</form> 
+

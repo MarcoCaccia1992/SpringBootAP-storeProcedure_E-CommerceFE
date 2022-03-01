@@ -1,0 +1,17 @@
+<table class="table table-bordered table-striped table-sm">
+    <thead>
+        <tr>
+            <th>ID-PRODUCT</th>
+            <th>NAME-PRODUCT</th>
+            <th>CODE-PRODUCT</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let product of products"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+            <td>{{product.id_product}}</td>
+            <td>{{product.name_product}}</td>
+            <td>{{product.code_product}}</td>
+        </tr>
+    </tbody>
+</table>
+

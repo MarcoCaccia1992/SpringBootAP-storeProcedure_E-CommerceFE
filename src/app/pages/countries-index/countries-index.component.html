@@ -1,0 +1,15 @@
+<p>WELCOME! INTO COUNTRIES PAGES</p>
+<br>
+
+<a [routerLink]="['/countries', {outlets: {'countries': ['get']}}]" routerLinkActive="active"><button #btnGetCountries>GET ALL COUNTRIES</button></a><br>
+<br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['post']}}]" routerLinkActive="active"><button #btnInsertCountries>INSERT NEW COUNTRY</button></a><br>
+<br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['put']}}]" routerLinkActive="active"><button #btnUpdatecCountry>UPDATE COUNTRIES</button></a><br>
+<br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['delete']}}]" routerLinkActive="active"><button #btnDeletetCountry>DELETE COUNTRY</button></a><br><br>
+<br>
+<br>
+<a [routerLink]="['/']" routerLinkActive="active"><button #btnBackToHome>BACK TO HOME</button></a><br><br> <!-- per tornare alla pagina-->
+
+<router-outlet name="countries"></router-outlet>

@@ -1,0 +1,7 @@
+<select #selectShop>
+    <option value = "null" disabled>SELECT SHOP</option>
+    <option *ngFor="let shop of shops" value ={{shop.id_shop}}>{{shop.name_shop}}</option><br>
+</select>
+<br>
+<br>
+<button (click)="deleteShop(selectShop.value)">SUBMIT</button> <!--chiamo il metodo dichiarato nel .ts e l'id della select -->

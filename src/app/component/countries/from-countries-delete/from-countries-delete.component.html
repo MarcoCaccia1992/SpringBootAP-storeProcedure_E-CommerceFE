@@ -1,0 +1,8 @@
+<select #selectCountry>
+    <option value = "null" disabled>SELECT COUNTRY</option>
+    <option *ngFor="let country of countries" value ={{country.id_country}}>{{country.name_country}}</option><br>
+</select>
+<br>
+<br>
+<button (click)="deleteCountry(selectCountry.value)">SUBMIT</button> <!--chiamo il metodo dichiarato nel .ts e l'id della select -->
+
