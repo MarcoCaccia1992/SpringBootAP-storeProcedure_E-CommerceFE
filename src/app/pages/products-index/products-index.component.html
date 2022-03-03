@@ -1,1 +1,15 @@
-<p>products-index works!</p>
+<p>WELCOME! INTO PRODUCTS PAGES</p>
+<br>
+
+<a [routerLink]="['/products', {outlets: {'products': ['get']}}]" routerLinkActive="active"><button #btnGetProduct>GET ALL PRODUCTS</button></a><br>
+<br>
+<a [routerLink]="['/products', {outlets: {'products': ['post']}}]" routerLinkActive="active"><button #btnInsertProduct>INSERT NEW PRODUCTS</button></a><br>
+<br>
+<a [routerLink]="['/products', {outlets: {'products': ['put']}}]" routerLinkActive="active"><button #btnUpdateProduct>UPDATE PRODUCTS</button></a><br>
+<br>
+<a [routerLink]="['/products', {outlets: {'products': ['delete']}}]" routerLinkActive="active"><button #btnDeletetProduct>DELETE PRODUCTS</button></a><br><br>
+<br>
+<br>
+<a [routerLink]="['/']" routerLinkActive="active"><button #btnBackToHome>BACK TO HOME</button></a><br><br> <!-- per tornare alla pagina-->
+
+<router-outlet name="products"></router-outlet>

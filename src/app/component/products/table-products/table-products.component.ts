@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsDTO } from 'src/app/model/ProductsDTO';
+import { ProductsEntity } from 'src/app/model/ProductsEntity';
 import { ProductsService } from 'src/app/service/Products.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class TableProductsComponent implements OnInit {
     private model : ProductsService
   ) { }
 
-  products : Array<ProductsDTO> = [];
+  products : Array<ProductsEntity> = [];
 
   ngOnInit(): void {
     this.model.findAll().subscribe(dto =>{this.products = dto;});

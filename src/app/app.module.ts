@@ -13,14 +13,11 @@ import { CountriesIndexComponent } from './pages/countries-index/countries-index
 import { ShopsIndexComponent } from './pages/shops-index/shops-index.component';
 import { ProductsIndexComponent } from './pages/products-index/products-index.component';
 import { NavbarManagmentComponent } from './component/navbar-managment/navbar-managment.component';
-import { FormShopsInsertComponent } from './component/shops/form-shops-insert/form-shops-insert.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormCountriesInsertComponent } from './component/countries/form-countries-insert/form-countries-insert.component';
 import { FormCountriesUpdateComponent } from './component/countries/form-countries-update/form-countries-update.component';
 import { FromCountriesDeleteComponent } from './component/countries/from-countries-delete/from-countries-delete.component';
 import { FormShopsUpdateComponent } from './component/shops/form-shops-update/form-shops-update.component';
 import { FormShopsDeleteComponent } from './component/shops/form-shops-delete/form-shops-delete.component';
-
 
 
 
@@ -37,12 +34,10 @@ import { FormShopsDeleteComponent } from './component/shops/form-shops-delete/fo
     ShopsIndexComponent,
     ProductsIndexComponent,
     NavbarManagmentComponent,
-    FormShopsInsertComponent,
-    FormCountriesInsertComponent,
     FormCountriesUpdateComponent,
     FromCountriesDeleteComponent,
     FormShopsUpdateComponent,
-    FormShopsDeleteComponent,
+    FormShopsDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -26,8 +26,8 @@ export class CountriesService {
     }
 
     insert(country : CountriesDTO) : Observable<any> {
-        return this.httpClient.post(this.localHostBaseCointriesUrl + 'newCountrySP?name_country=' + country.name_country + '&acronym_shop=' + country.acronym_shop, null);
-    } 
+        return this.httpClient.post(this.localHostBaseCointriesUrl + 'newCountrySP?name_country=' + country.name_country + '&acronym_shop=' + country.acronym_shop, country);
+    }
 
     put(country : CountriesDTO) : Observable<any> {
         return this.httpClient.put(this.localHostBaseCointriesUrl + 'updateCountrySP', country);
