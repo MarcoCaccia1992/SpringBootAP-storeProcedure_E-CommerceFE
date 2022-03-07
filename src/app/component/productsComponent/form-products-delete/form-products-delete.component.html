@@ -1,0 +1,7 @@
+<select #selectProduct>
+    <option value = "null" disabled>SELECT PRODUCT TO DELETE</option>
+    <option *ngFor="let product of products" value ={{product.id_product}}>{{product.name_product}}</option><br>
+</select>
+<br>
+<br>
+<button (click)="deleteProduct(selectProduct.value)">SUBMIT</button>

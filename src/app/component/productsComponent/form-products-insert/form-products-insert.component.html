@@ -1,0 +1,10 @@
+<form [formGroup]="formToInsertProduct" (ngSubmit)="insertNewProduct()">
+    Name_Product: <input formControlName="name_product"><br>
+    <br>
+    Code_Product: <input formControlName="code_product"><br>
+    <br>
+    ShopLinkedProduct_ID: <input formControlName="fk_shop"><br>
+    <br>
+    <button type="submit">INSERT ITEM</button>
+</form>
+
