@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SP-Microservice-Angular';
+
+  constructor(
+    private router: Router,
+    ) {}
+
+  onClick(dataIn : String) : void{
+    this.router.navigate(['/search'], { queryParams: { dataToSearch: dataIn } }); 
+    // con il Router gli si dice tramite il navigate, di "navigare" tra componenti o pagine con i vari input se presenti
+  }
 }

@@ -27,11 +27,11 @@ export class ProductsService {
         return this.httpClient.post(this.localHostBaseProductsUrl + 'newProductSP?name_product=' + product.name_product + '&code_product=' + product.code_product + '&fk_shop=' + product.fk_shop, null);
     }
     
-    put(product : ProductsDTO) : Observable<any> {
+    put(product : ProductsEntity) : Observable<any> {
         return this.httpClient.put(this.localHostBaseProductsUrl + 'updateAllDataProductByIdSP', product);
     }
 
     delete(product : Number) : Observable<any>  {
-        return this.httpClient.delete<any>(this.localHostBaseProductsUrl + 'deleteAndOrderProductById?id_country=' + product);
+        return this.httpClient.delete<any>(this.localHostBaseProductsUrl + 'deleteAndOrderProductByIdSP?id_product=' + product);
     }
 }

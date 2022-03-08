@@ -8,8 +8,5 @@
 <a [routerLink]="['/countries', {outlets: {'countries': ['put']}}]" routerLinkActive="active"><button #btnUpdatecCountry>UPDATE COUNTRIES</button></a><br>
 <br>
 <a [routerLink]="['/countries', {outlets: {'countries': ['delete']}}]" routerLinkActive="active"><button #btnDeletetCountry>DELETE COUNTRY</button></a><br><br>
-<br>
-<br>
-<a [routerLink]="['/']" routerLinkActive="active"><button #btnBackToHome>BACK TO HOME</button></a><br><br> <!-- per tornare alla pagina-->
 
 <router-outlet name="countries"></router-outlet>

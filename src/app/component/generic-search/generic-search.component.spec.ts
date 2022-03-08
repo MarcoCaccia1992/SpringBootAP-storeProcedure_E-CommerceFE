@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarManagmentComponent } from './navbar-managment.component';
+import { GenericSearchComponent } from './generic-search.component';
 
-describe('NavbarManagmentComponent', () => {
-  let component: NavbarManagmentComponent;
-  let fixture: ComponentFixture<NavbarManagmentComponent>;
+describe('GenericSearchComponentComponent', () => {
+  let component: GenericSearchComponent;
+  let fixture: ComponentFixture<GenericSearchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavbarManagmentComponent ]
+      declarations: [ GenericSearchComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavbarManagmentComponent);
+    fixture = TestBed.createComponent(GenericSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

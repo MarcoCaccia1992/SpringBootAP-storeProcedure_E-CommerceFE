@@ -1,0 +1,15 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th *ngFor = "let title of titles">{{title}}</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let result of results"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+            <td>{{ categ == 'SHOP' ? result.id_shop : categ == 'COUNTRY' ? result.id_country : result.id_product }}</td>
+            <td>{{ categ == 'SHOP' ? result.name_shop : categ == 'COUNTRY' ? result.name_country : result.name_product }}</td>
+            <td>{{ categ == 'SHOP' ? result.region_code : categ == 'COUNTRY' ? result.acronym_shop : result.code_product }}</td>
+        </tr>
+    </tbody>
+  </table>
+

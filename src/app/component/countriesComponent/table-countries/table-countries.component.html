@@ -1,10 +1,10 @@
-<table class="table table-bordered table-striped table-sm">
-    <thead>
-        <tr>
-            <th>ID-COUNTRY</th>
-            <th>NAME-COUNTRY</th>
-            <th>ACRONIM-SHOP</th>
-        </tr>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>ID-COUNTRY</th>
+        <th>NAME-COUNTRY</th>
+        <th>ACRONIM-SHOP</th>
+      </tr>
     </thead>
     <tbody>
         <tr *ngFor = "let country of countries"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
@@ -13,4 +13,4 @@
             <td>{{country.acronym_shop}}</td>
         </tr>
     </tbody>
-</table>
+  </table>
