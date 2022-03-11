@@ -16,13 +16,18 @@ export class FormShopsDeleteComponent implements OnInit {
   shops : Array<ShopsDTO> = [];
 
   ngOnInit(): void {
-    this.shopService.findAll().subscribe(response => {this.shops = response})
+   this.checkShopsList();
   }
 
   deleteShop(shop : string){
     var tmpShop = this.shops.find(x => x.id_shop == Number(shop))
     this.shopService.delete(Number(shop)).subscribe();
-    alert("you've already deleted: \n" + tmpShop?.id_shop + "\n" + tmpShop?.name_shop + "\n" + tmpShop?.region_code)
+    this.checkShopsList();
+    alert("you've already deleted: \n" + tmpShop?.id_shop + "\n" + tmpShop?.name_shop + "\n" + tmpShop?.region_code);
+  }
+
+  checkShopsList():void{
+    this.shopService.findAll().subscribe(response => {this.shops = response})
   }
 
 }

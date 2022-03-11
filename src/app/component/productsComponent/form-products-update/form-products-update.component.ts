@@ -12,14 +12,18 @@ import { ProductsService } from 'src/app/service/Products.service';
 export class FormProductsUpdateComponent implements OnInit {
 
   constructor(
-    private productService : ProductsService
-  ) { }
+    private productService : ProductsService,
+  ) {
+    this.formToUpdateProduct.disable();// disabilita il form completamente all'avvio
+   }
 
   product = {} as ProductsEntity;
 
   productTMP = {} as ProductsEntity;
 
   products : Array<ProductsEntity> = [];
+
+  isActive : boolean = true;
 
   formToUpdateProduct = new FormGroup({
     id_product : new FormControl('', Validators.required),
@@ -42,8 +46,14 @@ export class FormProductsUpdateComponent implements OnInit {
   onChange(event : any){
     var product = this.products.find(x => x.id_product == event.target.value);
     if(product != null){
+      this.formToUpdateProduct.enable();
+      this.isActive = false;
       this.formToUpdateProduct.setValue({id_product : product.id_product, name_product : product.name_product, code_product : product.code_product});
       this.productTMP = {id_product : Number(product.id_product), name_product : product.name_product, code_product : product.code_product};
+    }else{
+      this.formToUpdateProduct.reset(); // --> resetta i valori dei campi
+      this.formToUpdateProduct.disable();// disabilita il form completamente
+      this.isActive = true;// variabile utilizzata nel tag button per disabilitare il bottone
     }
   }
 

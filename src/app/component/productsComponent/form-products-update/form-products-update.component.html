@@ -1,7 +1,7 @@
 <p><em><h3>Please choose data and insert new fields to update on DB </h3></em></p>
 <br>
 <select (change) = "onChange($event)" class="form-select">
-    <option value = "null" disabled>SELECT PRODUCT</option>
+    <option value = "null">SELECT PRODUCT</option>
     <option *ngFor="let product of products" value ={{product.id_product}}>{{product.name_product}}</option><br>
 </select>
  <br>
@@ -22,7 +22,7 @@
       <input formControlName="code_product" class="form-control" placeholder="">
     </div>
     <br>
-  <button class="btn btn-warning" type="submit">UPDATE ITEM</button>
+  <button [disabled]="isActive" class="btn btn-warning" type="submit">UPDATE ITEM</button>
 </form>
 
 <!--

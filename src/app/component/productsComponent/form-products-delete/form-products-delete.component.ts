@@ -16,13 +16,18 @@ export class FormProductsDeleteComponent implements OnInit {
   products : Array<ProductsEntity> = [];
 
   ngOnInit(): void {
-    this.productService.findAll().subscribe(response => {this.products = response})
+    this.checkProductsList();
   }
 
   deleteProduct(product : string){
     var tmpProduct = this.products.find(x => x.id_product == Number(product));
     this.productService.delete(Number(product)).subscribe();
+    this.checkProductsList();
     alert("you've already deleted: \n" + tmpProduct?.id_product + "\n" + tmpProduct?.name_product + "\n" + tmpProduct?.code_product);
+  }
+
+  checkProductsList():void{
+    this.productService.findAll().subscribe(response => {this.products = response});
   }
 
 }

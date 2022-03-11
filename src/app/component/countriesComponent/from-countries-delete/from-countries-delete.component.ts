@@ -16,13 +16,18 @@ export class FromCountriesDeleteComponent implements OnInit {
   countries : Array<CountriesDTO> = [];
 
   ngOnInit(): void {
-    this.countryService.findAll().subscribe(countriesList => {this.countries =  countriesList}); //subscribe serve per interpretare quello che ariva da backend
+    this.checkCountriesList();
   }
 
   deleteCountry(country : string){
     var tmpCountry = this.countries.find(x => x.id_country == Number(country));
     this.countryService.delete(Number(country)).subscribe();
+    this.checkCountriesList();
     alert("you've already deleted: \n" + tmpCountry?.id_country + "\n" + tmpCountry?.name_country + "\n" + tmpCountry?.acronym_shop)
+  }
+
+  checkCountriesList():void{
+    this.countryService.findAll().subscribe(countriesList => {this.countries =  countriesList}); //subscribe serve per interpretare quello che ariva da backend
   }
 
 

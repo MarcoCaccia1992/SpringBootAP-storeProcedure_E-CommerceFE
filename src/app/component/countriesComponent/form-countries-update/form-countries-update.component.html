@@ -1,7 +1,7 @@
 <p><em><h3>Please choose data and insert new fields to update on DB </h3></em></p>
 <br>
 <select (change) = "onChange($event)" class="form-select">
-    <option value = "null" disabled>SELECT COUNTRY</option>
+    <option value = "null">SELECT COUNTRY</option>
     <option *ngFor="let country of countries" value ={{country.id_country}}>{{country.name_country}}</option><br>
 </select>
  <br>
@@ -22,7 +22,7 @@
       <input formControlName="acronym_shop" class="form-control" placeholder="">
     </div>
     <br>
-  <button class="btn btn-warning" type="submit">UPDATE ITEM</button>
+  <button [disabled]="isActive" class="btn btn-warning" type="submit">UPDATE ITEM</button>
 </form>
 
 
