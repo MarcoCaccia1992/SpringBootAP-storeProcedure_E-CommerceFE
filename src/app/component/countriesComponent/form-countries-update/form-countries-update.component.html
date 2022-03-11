@@ -1,3 +1,32 @@
+<p><em><h3>Please choose data and insert new fields to update on DB </h3></em></p>
+<br>
+<select (change) = "onChange($event)" class="form-select">
+    <option value = "null" disabled>SELECT COUNTRY</option>
+    <option *ngFor="let country of countries" value ={{country.id_country}}>{{country.name_country}}</option><br>
+</select>
+ <br>
+ <br>
+<form [formGroup]="countriesFormToUpdate" (ngSubmit)="updateCountry()">
+    <div class="form-group">
+        <label for="exampleInputPassword1">Id_Country:</label>
+        <input formControlName="id_country" class="form-control" placeholder="">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name_Country:</label>
+      <input formControlName="name_country" class="form-control"  placeholder="">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Acronym_Shop:</label>
+      <input formControlName="acronym_shop" class="form-control" placeholder="">
+    </div>
+    <br>
+  <button class="btn btn-warning" type="submit">UPDATE ITEM</button>
+</form>
+
+
+<!--
 <select (change) = "onChange($event)" >
     <option value = "null" disabled>SELECT COUNTRY</option>
     <option *ngFor="let country of countries" value ={{country.id_country}}>{{country.name_country}}</option><br>
@@ -12,5 +41,5 @@
     Acronym_Shop: <input formControlName="acronym_shop"> <br>
     <br>
     <button type="submit">UPDATE ITEM</button> 
-</form> 
+</form> -->
 

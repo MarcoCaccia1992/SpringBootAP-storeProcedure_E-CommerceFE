@@ -1,3 +1,23 @@
+<p><em><h3>This is all PRODUCTS into DB</h3></em></p>
+<br>
+<table class="table">
+    <thead style="color:rgb(233, 163, 98)">
+      <tr>
+        <th scope="col">ID-PRODUCT</th>
+        <th scope="col">NAME-PRODUCT</th>
+        <th scope="col">CODE-PRODUCT</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let product of products"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+            <td>{{product.id_product}}</td>
+            <td>{{product.name_product}}</td>
+            <td>{{product.code_product}}</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <!--
 <table class="table table-bordered table-striped table-sm">
     <thead>
         <tr>
@@ -7,11 +27,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor = "let product of products"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+        <tr *ngFor = "let product of products"> cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione
             <td>{{product.id_product}}</td>
             <td>{{product.name_product}}</td>
             <td>{{product.code_product}}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
+  
 

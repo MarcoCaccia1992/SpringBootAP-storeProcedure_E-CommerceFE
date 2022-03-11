@@ -70,6 +70,12 @@ export class GenericSearchComponent implements OnInit {
         this.titles.push("ID-PRODUCT", "NAME-PRODUCT", "CODE-PRODUCT");
       }
     });
+
+    if(this.categ == ""){
+      this.categ = "NOT PRESENT";
+      this.results.push(this.categ);
+      this.titles.push("", "", "", "", "", "DATA RESEARCHED", "");
+    }
   }
 
 

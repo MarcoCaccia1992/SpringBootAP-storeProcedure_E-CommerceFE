@@ -1,13 +1,13 @@
 
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">E-Commerce Application</a>
+<header class="navbar navbar-light sticky-top flex-md-nowrap p-0 shadow" style="background-color: #e3f2fd;">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" style="background-color: #e3f2fd;" href="#">E-Commerce Application</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <input #inputSearch class="form-control form-control-dark w-100" type="text" placeholder="insert data to search" aria-label="Search">
   <div class="navbar-nav">
     <div class="nav-item text-nowrap">
-      <a style="cursor:pointer" class="nav-link px-3" (click)="onClick(inputSearch.value)">SEARCH</a>
+      <button style="cursor:pointer" class="btn btn-outline-warning my-2 my-sm-0" (click)="onClick(inputSearch.value)">SEARCH</button>
     </div>
   </div>
 </header>
@@ -15,40 +15,42 @@
 <div class="container-fluid">
   <div class="row">
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-      <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home"></span>
-              HOME
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/countries">
-              <span data-feather="file"></span>
-              COUNTRIES
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"routerLink="/shops">
-              <span data-feather="shopping-cart"></span>
-              SHOPS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/products">
-              <span data-feather="users"></span>
-              PRODUCTS
-            </a>
-          </li>
-        </ul>
-
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false">HOME</a>
+        <a class="nav-link" data-toggle="pill" routerLink="/countries" role="tab" aria-controls="v-pills-home" aria-selected="true">COUNTRIES</a>
+        <a class="nav-link" data-toggle="pill" routerLink="/shops" role="tab" aria-controls="v-pills-profile" aria-selected="false">SHOPS</a>
+        <a class="nav-link" data-toggle="pill" routerLink="/products" role="tab" aria-controls="v-pills-settings" aria-selected="false">PRODUCTS</a>
       </div>
     </nav>
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <router-outlet></router-outlet>
-     
     </main>
   </div>
 </div>
+
+<!--
+      <div class="position-sticky pt-3">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              HOME
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/countries">
+              COUNTRIES
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"routerLink="/shops">
+              SHOPS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products">
+              PRODUCTS
+            </a>
+          </li>
+        </ul>
+      </div> -->

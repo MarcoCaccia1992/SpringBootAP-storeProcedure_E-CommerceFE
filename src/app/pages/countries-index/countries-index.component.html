@@ -1,12 +1,13 @@
-<p>WELCOME! INTO COUNTRIES PAGES</p>
+<br>
+<p><em><h2>Welcome! This is COUNTRIES page..</h2></em></p>
 <br>
 
-<a [routerLink]="['/countries', {outlets: {'countries': ['get']}}]" routerLinkActive="active"><button #btnGetCountries>GET ALL COUNTRIES</button></a><br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['get']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning" #btnGetCountries>GET ALL COUNTRIES</button></a><br>
 <br>
-<a [routerLink]="['/countries', {outlets: {'countries': ['post']}}]" routerLinkActive="active"><button #btnInsertCountries>INSERT NEW COUNTRY</button></a><br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['post']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning"  #btnInsertCountries>INSERT NEW COUNTRY</button></a><br>
 <br>
-<a [routerLink]="['/countries', {outlets: {'countries': ['put']}}]" routerLinkActive="active"><button #btnUpdatecCountry>UPDATE COUNTRIES</button></a><br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['put']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning"  #btnUpdatecCountry>UPDATE COUNTRY</button></a><br>
 <br>
-<a [routerLink]="['/countries', {outlets: {'countries': ['delete']}}]" routerLinkActive="active"><button #btnDeletetCountry>DELETE COUNTRY</button></a><br><br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['delete']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning"  #btnDeletetCountry>DELETE COUNTRY</button></a><br><br>
 
 <router-outlet name="countries"></router-outlet>

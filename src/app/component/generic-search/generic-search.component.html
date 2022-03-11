@@ -6,7 +6,10 @@
     </thead>
     <tbody>
         <tr *ngFor = "let result of results"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
-            <td>{{ categ == 'SHOP' ? result.id_shop : categ == 'COUNTRY' ? result.id_country : result.id_product }}</td>
+            <td>{{ categ == 'SHOP' ? result.id_shop
+               : categ == 'COUNTRY' ? result.id_country
+               : categ == 'PRODUCT' ? result.id_product 
+               : categ  }}</td> <!-- RAPPRESENTA il dato inserito in una colonna e andando a capo inserisco il dato in un'altra colonna-->
             <td>{{ categ == 'SHOP' ? result.name_shop : categ == 'COUNTRY' ? result.name_country : result.name_product }}</td>
             <td>{{ categ == 'SHOP' ? result.region_code : categ == 'COUNTRY' ? result.acronym_shop : result.code_product }}</td>
         </tr>

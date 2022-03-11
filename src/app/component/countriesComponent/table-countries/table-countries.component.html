@@ -1,3 +1,23 @@
+<p><em><h3>This is all COUNTRIES into DB</h3></em></p>
+<br>
+<table class="table">
+    <thead style="color:rgb(233, 163, 98)">
+      <tr>
+        <th scope="col">ID-COUNTRY</th>
+        <th scope="col">NAME-COUNTRY</th>
+        <th scope="col">ACRONIM-SHOP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let country of countries"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+        <td>{{country.id_country}}</td>
+        <td>{{country.name_country}}</td>
+        <td>{{country.acronym_shop}}</td>
+        </tr>
+    </tbody>
+  </table>
+
+<!--
 <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -7,10 +27,11 @@
       </tr>
     </thead>
     <tbody>
-        <tr *ngFor = "let country of countries"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+        <tr *ngFor = "let country of countries"> 
             <td>{{country.id_country}}</td>
             <td>{{country.name_country}}</td>
             <td>{{country.acronym_shop}}</td>
         </tr>
     </tbody>
-  </table>
+  </table> -->
+

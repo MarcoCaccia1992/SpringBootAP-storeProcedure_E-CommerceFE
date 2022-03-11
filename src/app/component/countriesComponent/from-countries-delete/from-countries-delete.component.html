@@ -1,8 +1,20 @@
+<p><em><h3>Please choose data to delete into DB </h3></em></p>
+<br>
+<select #selectCountry class="form-select">
+    <option value = "null" disabled>SELECT COUNTRY</option>
+    <option *ngFor="let country of countries" value ={{country.id_country}}>{{country.name_country}}</option><br>
+</select>
+ <br>
+ <br>
+ <button class="btn btn-warning" type="submit" (click)="deleteCountry(selectCountry.value)">DELETE ITEM</button>
+
+ <!--
 <select #selectCountry>
     <option value = "null" disabled>SELECT COUNTRY</option>
     <option *ngFor="let country of countries" value ={{country.id_country}}>{{country.name_country}}</option><br>
 </select>
 <br>
 <br>
-<button (click)="deleteCountry(selectCountry.value)">SUBMIT</button> <!--chiamo il metodo dichiarato nel .ts e l'id della select -->
+<button (click)="deleteCountry(selectCountry.value)">SUBMIT</button>
+-->
 

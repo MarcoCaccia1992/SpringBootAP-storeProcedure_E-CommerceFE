@@ -1,9 +1,36 @@
-<select (change) = "onChange($event)" >
-    <option value = "null" disabled>SELECT SHOP</option>
+<p><em><h3>Please choose data and insert new fields to update on DB </h3></em></p>
+<br>
+<select (change) = "onChange($event)" class="form-select">
+    <option value = "null" disabled>SELECT PRODUCT</option>
     <option *ngFor="let product of products" value ={{product.id_product}}>{{product.name_product}}</option><br>
 </select>
  <br>
  <br>
+<form [formGroup]="formToUpdateProduct" (ngSubmit)="updateProduct()">
+    <div class="form-group">
+        <label for="exampleInputPassword1">Id_Product:</label>
+        <input formControlName="id_product" class="form-control" placeholder="">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name_Product:</label>
+      <input formControlName="name_product" class="form-control"  placeholder="">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Code_Product:</label>
+      <input formControlName="code_product" class="form-control" placeholder="">
+    </div>
+    <br>
+  <button class="btn btn-warning" type="submit">UPDATE ITEM</button>
+</form>
+
+<!--
+  <select (change) = "onChange($event)" >
+    <option value = "null" disabled>SELECT SHOP</option>
+    <option *ngFor="let product of products" value ={{product.id_product}}>{{product.name_product}}</option><br>
+</select> 
+
 <form [formGroup]="formToUpdateProduct" (ngSubmit)="updateProduct()">
     Id_Product: <input readOnly formControlName="id_product"> <br>
     <br>
@@ -13,4 +40,4 @@
     <br>
     <button type="submit">UPDATE ITEM</button> 
 </form> 
-
+-->

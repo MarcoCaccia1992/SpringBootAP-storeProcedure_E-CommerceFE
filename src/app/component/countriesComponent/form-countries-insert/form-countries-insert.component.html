@@ -1,7 +1,24 @@
+<p><em><h3>Please insert data you want to save into DB </h3></em></p>
+<br>
+<form [formGroup]="formToInsertNewCountry" (ngSubmit)="insertNewCountry()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name_Country:</label>
+      <input formControlName="name_country" class="form-control"  placeholder="country">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Acronym_Shop:</label>
+      <input formControlName="acronym_shop" class="form-control" placeholder="acronym">
+    </div>
+    <br>
+    <button class="btn btn-warning" type="submit">INSERT ITEM</button>
+  </form>
+
+  <!--
 <form [formGroup]="formToInsertNewCountry" (ngSubmit)="insertNewCountry()">
     Name_Country: <input formControlName="name_country"><br>
     <br>
     Acronym_Shop: <input formControlName="acronym_shop"><br>
     <br>
     <button type="submit">INSERT ITEM</button>
-</form>
+</form> -->

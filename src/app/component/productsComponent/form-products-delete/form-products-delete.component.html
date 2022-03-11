@@ -1,3 +1,14 @@
+<p><em><h3>Please choose data to delete into DB </h3></em></p>
+<br>
+<select #selectProduct class="form-select">
+    <option value = "null" disabled>SELECT PRODUCT</option>
+    <option *ngFor="let product of products" value ={{product.id_product}}>{{product.name_product}}</option><br>
+</select>
+ <br>
+ <br>
+ <button class="btn btn-warning" type="submit" (click)="deleteProduct(selectProduct.value)">DELETE ITEM</button>
+
+ <!--
 <select #selectProduct>
     <option value = "null" disabled>SELECT PRODUCT TO DELETE</option>
     <option *ngFor="let product of products" value ={{product.id_product}}>{{product.name_product}}</option><br>
@@ -5,3 +16,4 @@
 <br>
 <br>
 <button (click)="deleteProduct(selectProduct.value)">SUBMIT</button>
+<br> -->

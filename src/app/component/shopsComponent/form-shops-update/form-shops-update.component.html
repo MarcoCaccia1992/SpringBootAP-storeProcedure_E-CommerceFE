@@ -1,3 +1,31 @@
+<p><em><h3>Please choose data and insert new fields to update on DB </h3></em></p>
+<br>
+<select (change) = "onChange($event)" class="form-select">
+    <option value = "null" disabled>SELECT SHOPT</option>
+    <option *ngFor="let shop of shops" value ={{shop.id_shop}}>{{shop.name_shop}}</option><br>
+</select>
+ <br>
+ <br>
+<form [formGroup]="shopsFormToUpdate" (ngSubmit)="updateShop()">
+    <div class="form-group">
+        <label for="exampleInputPassword1">Id_Shop:</label>
+        <input formControlName="id_shop" class="form-control" placeholder="">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name_Shop:</label>
+      <input formControlName="name_shop" class="form-control"  placeholder="">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Region_Code:</label>
+      <input formControlName="region_code" class="form-control" placeholder="">
+    </div>
+    <br>
+  <button class="btn btn-warning" type="submit">UPDATE ITEM</button>
+</form>
+
+<!--
 <select (change) = "onChange($event)" >
     <option value = "null" disabled>SELECT SHOP</option>
     <option *ngFor="let shop of shops" value ={{shop.id_shop}}>{{shop.name_shop}}</option><br>
@@ -12,6 +40,8 @@
     Region_Code: <input formControlName="region_code"> <br>
     <br>
     <button type="submit">UPDATE ITEM</button> 
-</form> 
+</form> -->
+
+
 
     

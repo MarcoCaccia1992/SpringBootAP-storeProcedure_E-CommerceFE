@@ -1,3 +1,23 @@
+<p><em><h3>This is all SHOPS into DB</h3></em></p>
+<br>
+<table class="table">
+    <thead style="color:rgb(233, 163, 98)">
+      <tr>
+        <th scope="col">ID-SHOP</th>
+        <th scope="col">NAME-SHOP</th>
+        <th scope="col">REGION-CODE</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let shop of shops"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+            <td>{{shop.id_shop}}</td>
+            <td>{{shop.name_shop}}</td>
+            <td>{{shop.region_code}}</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <!--
 <table class="table table-bordered table-striped table-sm">
     <thead>
         <tr>
@@ -7,11 +27,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor = "let shop of shops"> <!-- cicla tramite comandi base di angular e trova country e le butta dentro l'array che deve essere chiamato uguale alla dichiarazione-->
+        <tr *ngFor = "let shop of shops"> 
             <td>{{shop.id_shop}}</td>
             <td>{{shop.name_shop}}</td>
             <td>{{shop.region_code}}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
 
