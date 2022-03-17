@@ -1,7 +1,6 @@
 <p><em><h3>Please choose data to delete into DB </h3></em></p>
 <br>
-<select #selectProduct class="form-select">
-    <option value = "null" disabled>SELECT PRODUCT</option>
+<select [formControl]="selectOption" #selectProduct class="form-select">
     <option *ngFor="let product of products" value ={{product.id_product}}>{{product.name_product}}</option><br>
 </select>
  <br>

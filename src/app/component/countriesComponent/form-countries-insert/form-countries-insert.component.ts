@@ -26,6 +26,7 @@ export class FormCountriesInsertComponent {
     var form = this.formToInsertNewCountry.value;
     this.country = {name_country : form.name_country, acronym_shop : form.acronym_shop};
     this.countryService.insert(this.country).subscribe();
+    this.formToInsertNewCountry.reset();
     alert("you've already insert: \n" + form.name_country + "\n" + form.acronym_shop);
   }
 

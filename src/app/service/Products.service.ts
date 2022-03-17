@@ -32,6 +32,6 @@ export class ProductsService {
     }
 
     delete(product : Number) : Observable<any>  {
-        return this.httpClient.delete<any>(this.localHostBaseProductsUrl + 'deleteAndOrderProductByIdSP?id_product=' + product);
+        return this.httpClient.delete(this.localHostBaseProductsUrl + 'deleteAndOrderProductByIdSP?id_product=' + product);
     }
 }

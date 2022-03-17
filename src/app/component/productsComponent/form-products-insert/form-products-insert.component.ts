@@ -43,9 +43,8 @@ export class FormProductsInsertComponent{
     this.product = {name_product : form.name_product, code_product : Number(form.code_product), fk_shop : Number(form.fk_shop)};
     this.productService.insert(this.product).subscribe();
     var shopsName = this.getLinkedShop(form.fk_shop);
+    this.formToInsertProduct.reset();
     alert("you've already insert: \n" + form.name_product + "\n" + form.code_product + "\n" + "LINKED TO SHOP --> " + shopsName);
   }
-
-  
 
 }

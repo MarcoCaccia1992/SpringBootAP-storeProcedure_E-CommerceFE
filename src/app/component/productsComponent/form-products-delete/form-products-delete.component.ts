@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { ProductsEntity } from 'src/app/model/ProductsEntity';
+import { ShopsDTO } from 'src/app/model/ShopsDTO';
 import { ProductsService } from 'src/app/service/Products.service';
 
 @Component({
@@ -15,6 +17,8 @@ export class FormProductsDeleteComponent implements OnInit {
 
   products : Array<ProductsEntity> = [];
 
+  selectOption = new FormControl();
+
   ngOnInit(): void {
     this.checkProductsList();
   }
@@ -27,7 +31,17 @@ export class FormProductsDeleteComponent implements OnInit {
   }
 
   checkProductsList():void{
-    this.productService.findAll().subscribe(response => {this.products = response});
+    this.selectOption.reset();
+    this.productService.findAll().subscribe((response: Array<ProductsEntity>) => {
+      this.products = response;
+      if (this.products.length != 0) {
+        this.selectOption.enable();
+        this.selectOption.setValue(this.products[0].id_product);
+      } else {
+        this.selectOption.disable();
+      }
+    });
   }
 
+ 
 }

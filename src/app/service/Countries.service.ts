@@ -34,6 +34,6 @@ export class CountriesService {
     }
     
     delete(country : number) : Observable<any> {
-        return this.httpClient.delete<any>(this.localHostBaseCointriesUrl + 'deleteCountrySP?id_country=' + country );
+        return this.httpClient.delete(this.localHostBaseCointriesUrl + 'deleteCountrySP?id_country=' + country );
     } 
 }

@@ -25,6 +25,7 @@ export class FormShopsInsertComponent{
     var form = this.formToInsertShop.value;
     this.shop = {name_shop : form.name_shop, region_code : form.region_code};
     this.shopsService.insert(this.shop).subscribe();
+    this.formToInsertShop.reset();
     alert("you've already insert: \n" + form.name_shop + "\n" + form.region_code);
   }
 
