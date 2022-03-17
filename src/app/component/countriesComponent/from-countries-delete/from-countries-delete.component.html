@@ -1,6 +1,6 @@
 <p><em><h3>Please choose data to delete into DB </h3></em></p>
 <br>
-<select #selectCountry class="form-select">
+<select [formControl]="selectOption" #selectCountry class="form-select">
     <option value = "null" disabled>SELECT COUNTRY</option>
     <option *ngFor="let country of countries" value ={{country.id_country}}>{{country.name_country}}</option><br>
 </select>

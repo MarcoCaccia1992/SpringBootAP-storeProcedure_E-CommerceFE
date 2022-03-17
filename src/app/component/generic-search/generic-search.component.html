@@ -1,7 +1,9 @@
+<br>
+<p><em><h3>This {{categ}} is the your reserach's result </h3></em></p>
 <table class="table">
-    <thead class="thead-dark">
+    <thead style="color:rgb(233, 163, 98)">
       <tr>
-        <th *ngFor = "let title of titles">{{title}}</th>
+        <th scope="col" *ngFor = "let title of titles">{{title}}</th>
       </tr>
     </thead>
     <tbody>
@@ -15,4 +17,5 @@
         </tr>
     </tbody>
   </table>
+
 

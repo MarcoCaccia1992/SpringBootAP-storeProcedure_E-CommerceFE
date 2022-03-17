@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { CountriesDTO } from 'src/app/model/CountriesDTO';
 import { CountriesService } from 'src/app/service/Countries.service';
 
@@ -15,6 +16,8 @@ export class FromCountriesDeleteComponent implements OnInit {
 
   countries : Array<CountriesDTO> = [];
 
+  selectOption = new FormControl();
+
   ngOnInit(): void {
     this.checkCountriesList();
   }
@@ -27,7 +30,15 @@ export class FromCountriesDeleteComponent implements OnInit {
   }
 
   checkCountriesList():void{
-    this.countryService.findAll().subscribe(countriesList => {this.countries =  countriesList}); //subscribe serve per interpretare quello che ariva da backend
+    this.countryService.findAll().subscribe((response: Array<CountriesDTO>) => {
+      this.countries = response;
+      if (this.countries.length != 0) {
+        this.selectOption.enable();
+        this.selectOption.setValue(this.countries[0].id_country);
+      } else {
+        this.selectOption.disable();
+      }
+    }); //subscribe serve per interpretare quello che ariva da backend
   }
 
 
