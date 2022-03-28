@@ -16,6 +16,7 @@ import { FormProductsUpdateComponent } from './component/productsComponent/form-
 import { FormProductsDeleteComponent } from './component/productsComponent/form-products-delete/form-products-delete.component';
 import { FormCountriesInsertComponent } from './component/countriesComponent/form-countries-insert/form-countries-insert.component';
 import { GenericSearchComponent } from './component/generic-search/generic-search.component';
+import { HomeComponent } from './component/home/home.component';
 
 
 const routes: Routes = [
@@ -42,7 +43,9 @@ const routes: Routes = [
     {path: 'delete', component:FormProductsDeleteComponent, outlet : 'products'}]
   },
 
-  {path: 'search', component:GenericSearchComponent}
+  {path: 'search', component:GenericSearchComponent},
+
+  {path: '', component:HomeComponent}
 ];
 
 @NgModule({

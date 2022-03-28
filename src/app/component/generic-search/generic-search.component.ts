@@ -20,7 +20,7 @@ export class GenericSearchComponent implements OnInit {
     private shopsService : ShopsService,
     private countriesService : CountriesService,
     private productsService : ProductsService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute // serve ad utilizzare metodi che si riferiscono alle rotte o url 
   ) {
   this.countriesService.findAll().subscribe(response => {this.countries = response;   this.readDataFromQueyParams();});
   this.productsService.findAll().subscribe(response => {this.products = response;   this.readDataFromQueyParams();});
@@ -40,9 +40,10 @@ export class GenericSearchComponent implements OnInit {
 
   readDataFromQueyParams() : void {
     this.route.queryParams.subscribe((params : any) => { // da utilizzare queryParams importante
-    var stringToSearch = params['dataToSearch'];
-    this.getDataSearched(stringToSearch);
-  })}
+      var stringToSearch = params['dataToSearch']; // dall'html leggo il parametro specifico in una ricerca o altro
+      this.getDataSearched(stringToSearch);
+    })
+  }
 
   getDataSearched(data : any) : void{
     this.titles = [];

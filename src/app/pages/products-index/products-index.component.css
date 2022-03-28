@@ -1,0 +1,71 @@
+/*
+ button
+*/
+
+#GetAllProductsButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+    
+  }
+  
+   #GetAllProductsButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(132, 168, 223);
+    color: yellow;
+  }
+
+  #InsertNewProductsButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #InsertNewProductsButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(132, 168, 223);
+    color: yellow;
+    
+  }
+
+  #UpdateProductsButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #UpdateProductsButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(132, 168, 223);
+    color: yellow;
+    
+  }
+
+  #DeleteProductsButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #DeleteProductsButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(132, 168, 223);
+    color: yellow;
+    
+  }

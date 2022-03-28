@@ -1,0 +1,75 @@
+/*
+ button
+*/
+
+#GetAllCountriesButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+    
+  }
+  
+   #GetAllCountriesButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
+  }
+
+  #InsertNewCountriesButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #InsertNewCountriesButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
+    
+  }
+
+  #UpdateCountriesButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #UpdateCountriesButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
+    
+  }
+
+  #DeleteCountriesButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #DeleteCountriesButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
+    
+  }

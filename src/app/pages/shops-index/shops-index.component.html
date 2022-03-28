@@ -1,13 +1,13 @@
 <br>
 <p><em><h2>Welcome! This is SHOPS page..</h2></em></p>
 <br>
-
-<a [routerLink]="['/shops', {outlets: {'shops': ['get']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning" #btnGetShop>GET ALL SHOPS</button></a><br>
 <br>
-<a [routerLink]="['/shops', {outlets: {'shops': ['post']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning" #btnInsertShop>INSERT NEW SHOP</button></a><br>
+<a [routerLink]="['/shops', {outlets: {'shops': ['get']}}]" routerLinkActive="active" id="GetAllShopsButton"><button type="button" class="btn btn-warning" #btnGetShop>GET ALL SHOPS</button></a><br>
 <br>
-<a [routerLink]="['/shops', {outlets: {'shops': ['put']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning" #btnUpdateShop>UPDATE SHOP</button></a><br>
+<a [routerLink]="['/shops', {outlets: {'shops': ['post']}}]" routerLinkActive="active" id="InsertNewShopsButton"><button type="button" class="btn btn-warning" #btnInsertShop>INSERT NEW SHOP</button></a><br>
 <br>
-<a [routerLink]="['/shops', {outlets: {'shops': ['delete']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning" #btnDeletetShop>DELETE SHOP</button></a><br><br>
+<a [routerLink]="['/shops', {outlets: {'shops': ['put']}}]" routerLinkActive="active" id="UpdateShopsButton"><button type="button" class="btn btn-warning" #btnUpdateShop>UPDATE SHOP</button></a><br>
+<br>
+<a [routerLink]="['/shops', {outlets: {'shops': ['delete']}}]" routerLinkActive="active" id="DeleteShopsButton"><button type="button" class="btn btn-warning" #btnDeletetShop>DELETE SHOP</button></a><br><br>
 
 <router-outlet name="shops"></router-outlet>

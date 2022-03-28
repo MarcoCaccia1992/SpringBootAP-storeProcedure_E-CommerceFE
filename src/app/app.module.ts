@@ -23,6 +23,7 @@ import { FormProductsUpdateComponent } from './component/productsComponent/form-
 import { FormProductsDeleteComponent } from './component/productsComponent/form-products-delete/form-products-delete.component';
 import { FormCountriesInsertComponent } from './component/countriesComponent/form-countries-insert/form-countries-insert.component';
 import { GenericSearchComponent } from './component/generic-search/generic-search.component';
+import { HomeComponent } from './component/home/home.component';
 
 
 
@@ -48,6 +49,7 @@ import { GenericSearchComponent } from './component/generic-search/generic-searc
     FormProductsDeleteComponent,
     FormCountriesInsertComponent,
     GenericSearchComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

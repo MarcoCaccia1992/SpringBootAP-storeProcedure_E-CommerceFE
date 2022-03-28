@@ -2,16 +2,16 @@
 <br>
 <form [formGroup]="formToInsertNewCountry" (ngSubmit)="insertNewCountry()">
     <div class="form-group">
-      <label for="exampleInputEmail1">Name_Country:</label>
-      <input formControlName="name_country" class="form-control"  placeholder="country">
+      <label>Name_Country:</label>
+      <input id="InputInsertCountry" formControlName="name_country" class="form-control"  placeholder="country">
     </div>
     <br>
     <div class="form-group">
-      <label for="exampleInputPassword1">Acronym_Shop:</label>
-      <input formControlName="acronym_shop" class="form-control" placeholder="acronym">
+      <label>Acronym_Shop:</label>
+      <input id="InputInsertCountry" formControlName="acronym_shop" class="form-control" placeholder="acronym">
     </div>
     <br>
-    <button class="btn btn-warning" type="submit">INSERT ITEM</button>
+    <button id="InsertBotton" type="submit">INSERT ITEM</button>
   </form>
 
   <!--

@@ -1,0 +1,71 @@
+/*
+ button
+*/
+
+#GetAllShopsButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+    
+  }
+  
+   #GetAllShopsButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(132, 168, 223);
+    color: yellow;
+  }
+
+  #InsertNewShopsButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #InsertNewShopsButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(132, 168, 223);
+    color: yellow;
+    
+  }
+
+  #UpdateShopsButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #UpdateShopsButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(132, 168, 223);
+    color: yellow;
+    
+  }
+
+  #DeleteShopsButton{ /*classe padre riferitosi al ta <a>*/
+    margin: auto;
+    margin-top: 20px;
+    width: 55%;
+    
+  }
+  
+   #DeleteShopsButton button {/*classe figlio riferitosi al ta <button>*/
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(132, 168, 223);
+    color: yellow;
+    
+  }

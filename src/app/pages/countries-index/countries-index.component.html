@@ -2,12 +2,12 @@
 <p><em><h2>Welcome! This is COUNTRIES page..</h2></em></p>
 <br>
 
-<a [routerLink]="['/countries', {outlets: {'countries': ['get']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning" #btnGetCountries>GET ALL COUNTRIES</button></a><br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['get']}}]" routerLinkActive="active" id= "GetAllCountriesButton"><button  style="cursor:pointer" class="btn btn-warning my-2 my-sm-4">GET ALL COUNTRIES</button></a>
 <br>
-<a [routerLink]="['/countries', {outlets: {'countries': ['post']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning"  #btnInsertCountries>INSERT NEW COUNTRY</button></a><br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['post']}}]" routerLinkActive="active" id= "InsertNewCountriesButton"><button type="button" class="btn btn-warning"  #btnInsertCountries>INSERT NEW COUNTRY</button></a><br>
 <br>
-<a [routerLink]="['/countries', {outlets: {'countries': ['put']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning"  #btnUpdatecCountry>UPDATE COUNTRY</button></a><br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['put']}}]" routerLinkActive="active" id= "UpdateCountriesButton"><button type="button" class="btn btn-warning"  #btnUpdatecCountry>UPDATE COUNTRY</button></a><br>
 <br>
-<a [routerLink]="['/countries', {outlets: {'countries': ['delete']}}]" routerLinkActive="active"><button type="button" class="btn btn-warning"  #btnDeletetCountry>DELETE COUNTRY</button></a><br><br>
+<a [routerLink]="['/countries', {outlets: {'countries': ['delete']}}]" routerLinkActive="active" id= "DeleteCountriesButton"><button type="button" class="btn btn-warning"  #btnDeletetCountry>DELETE COUNTRY</button></a><br><br>
 
 <router-outlet name="countries"></router-outlet>

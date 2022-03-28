@@ -1,33 +1,35 @@
 
-<header class="navbar navbar-light sticky-top flex-md-nowrap p-0 shadow" style="background-color: #e3f2fd;">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" style="background-color: #e3f2fd;" href="#">E-Commerce Application</a>
+<header class="navbar navbar-light sticky-top flex-md-nowrap p-0 shadow" style="background-color: rgb(132, 168, 223);">
+  <a class="navbar-brand col-md-3 col-lg-3 me-4 px-5" style="background-color: rgb(132, 168, 223);" href="#"><em style="color:rgb(248, 184, 8)">E-Commerce Application</em></a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <input #inputSearch class="form-control form-control-dark w-100 text-secondary" type="text" placeholder="insert data to search" aria-label="Search">
+  <input #inputSearch id="inputSearch" class="form-control form-control-dark w-100" type="text" placeholder="insert data to search" aria-label="Search">
   <div class="navbar-nav">
     <div class="nav-item text-nowrap">
-      <button style="cursor:pointer" class="btn btn-outline-warning my-2 my-sm-0" (click)="onClick(inputSearch.value)">SEARCH</button>
+      <button id="SearchButton" style="cursor:pointer" class="btn  my-2 my-sm-0 " (click)="onClick(inputSearch.value)">SEARCH</button>
     </div>
   </div>
 </header>
 
 <div class="container-fluid">
   <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse">
       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false">HOME</a>
-        <a class="nav-link" data-toggle="pill" routerLink="/countries" role="tab" aria-controls="v-pills-home" aria-selected="true">COUNTRIES</a>
-        <a class="nav-link" data-toggle="pill" routerLink="/shops" role="tab" aria-controls="v-pills-profile" aria-selected="false">SHOPS</a>
-        <a class="nav-link" data-toggle="pill" routerLink="/products" role="tab" aria-controls="v-pills-settings" aria-selected="false">PRODUCTS</a>
+        <a id="HomeButton" href="#"><button  style="cursor:pointer" class="btn btn-warning my-2 my-sm-4">HOME</button></a>
+        <a id="CountriesButton" routerLink="/countries"><button  style="cursor:pointer" class="btn btn-warning my-2 my-sm-4">COUNTRIES</button></a>
+        <a id="ShopsButton" routerLink="/shops"><button  style="cursor:pointer" class="btn btn-warning my-2 my-sm-4">SHOPS</button></a>
+        <a id="CountriesButton" routerLink="/products"><button  style="cursor:pointer" class="btn btn-warning my-2 my-sm-4">PRODUCTS</button></a>
       </div>
     </nav>
 
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <router-outlet></router-outlet>
+    <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
+        <router-outlet></router-outlet> <!-- mi spamma i componenti sotto -->
     </main>
+
   </div>
 </div>
+
 
 <!--
       <div class="position-sticky pt-3">
