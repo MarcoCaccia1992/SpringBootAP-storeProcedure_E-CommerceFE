@@ -1,4 +1,4 @@
-<p><em><h3>Please choose data to delete into DB </h3></em></p>
+<p><em><h3>Please choose which country you want to delete from the DB</h3></em></p>
 <br>
 <select [formControl]="selectOption" #selectCountry class="form-select">
     <option value = "null" disabled>SELECT COUNTRY</option>
@@ -6,7 +6,7 @@
 </select>
  <br>
  <br>
- <button class="btn btn-warning" type="submit" (click)="deleteCountry(selectCountry.value)">DELETE ITEM</button>
+ <button id="DeleteButton" class="btn btn-warning" type="submit" (click)="deleteCountry(selectCountry.value)">DELETE ITEM</button>
 
  <!--
 <select #selectCountry>

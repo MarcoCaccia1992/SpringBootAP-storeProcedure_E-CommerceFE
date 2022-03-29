@@ -9,20 +9,20 @@
 <form [formGroup]="countriesFormToUpdate" (ngSubmit)="updateCountry()">
     <div class="form-group">
         <label for="exampleInputPassword1">Id_Country:</label>
-        <input formControlName="id_country" class="form-control" placeholder="">
+        <input id="InputUpdateCountry" formControlName="id_country" class="form-control" placeholder="">
     </div>
     <br>
     <div class="form-group">
       <label for="exampleInputEmail1">Name_Country:</label>
-      <input formControlName="name_country" class="form-control"  placeholder="">
+      <input id="InputUpdateCountry" formControlName="name_country" class="form-control"  placeholder="">
     </div>
     <br>
     <div class="form-group">
       <label for="exampleInputPassword1">Acronym_Shop:</label>
-      <input formControlName="acronym_shop" class="form-control" placeholder="">
+      <input id="InputUpdateCountry" formControlName="acronym_shop" class="form-control" placeholder="">
     </div>
     <br>
-  <button [disabled]="isActive" class="btn btn-warning" type="submit">UPDATE ITEM</button>
+  <button [disabled]="isActive" id="UpdateBotton" class="btn btn-warning" type="submit">UPDATE ITEM</button>
 </form>
 
 

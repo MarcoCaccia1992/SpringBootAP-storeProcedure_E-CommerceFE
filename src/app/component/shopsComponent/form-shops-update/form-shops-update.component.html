@@ -9,12 +9,12 @@
 <form [formGroup]="shopsFormToUpdate" (ngSubmit)="updateShop()">
     <div class="form-group">
         <label for="exampleInputPassword1">Id_Shop:</label>
-        <input formControlName="id_shop" class="form-control" placeholder="">
+        <input id="InputUpdateShop" formControlName="id_shop" class="form-control" placeholder="">
     </div>
     <br>
     <div class="form-group">
       <label for="exampleInputEmail1">Name_Shop:</label>
-      <input formControlName="name_shop" class="form-control"  placeholder="">
+      <input id="InputUpdateShop" formControlName="name_shop" class="form-control"  placeholder="">
     </div>
     <br>
     <div class="form-group">
@@ -22,7 +22,7 @@
       <input formControlName="region_code" class="form-control" placeholder="">
     </div>
     <br>
-  <button [disabled]="isActive" class="btn btn-warning" type="submit">UPDATE ITEM</button>
+  <button id="UpdateBotton" [disabled]="isActive" class="btn btn-warning" type="submit">UPDATE ITEM</button>
 </form>
 
 <!--

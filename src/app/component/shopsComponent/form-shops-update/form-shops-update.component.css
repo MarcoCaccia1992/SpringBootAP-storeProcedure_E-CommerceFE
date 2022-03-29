@@ -1,0 +1,24 @@
+/*
+    button
+*/
+
+#UpdateBotton{ /*classe padre riferitosi al ta <a>*/
+    border: 1px solid;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
+    margin-bottom: 10px;
+    
+  }
+
+  ::placeholder{
+      color: rgb(132, 168, 223);
+  }
+
+  #InputUpdateShop{
+      color:rgb(132, 168, 223)
+  }

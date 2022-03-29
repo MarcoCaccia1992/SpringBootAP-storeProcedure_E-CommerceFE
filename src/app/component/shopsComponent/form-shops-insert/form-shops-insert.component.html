@@ -3,15 +3,15 @@
 <form [formGroup]="formToInsertShop" (ngSubmit)="insertNewShop()">
     <div class="form-group">
       <label for="exampleInputEmail1">Name_Shop:</label>
-      <input formControlName="name_shop" class="form-control"  placeholder="shop">
+      <input id="InputInsertShop" formControlName="name_shop" class="form-control"  placeholder="shop">
     </div>
     <br>
     <div class="form-group">
       <label for="exampleInputPassword1">Region_code:</label>
-      <input formControlName="region_code" class="form-control" placeholder="region">
+      <input id="InputInsertShop" formControlName="region_code" class="form-control" placeholder="region">
     </div>
     <br>
-    <button class="btn btn-warning" type="submit">INSERT ITEM</button>
+    <button id="InsertBotton" class="btn btn-warning" type="submit">INSERT ITEM</button>
   </form>
 
   <!--
