@@ -15,8 +15,9 @@
     border-radius: 15px;
     width: 40%;
     height: 50px;
-    background-color: rgb(132, 168, 223);
-    color: yellow;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
   }
 
   #InsertNewShopsButton{ /*classe padre riferitosi al ta <a>*/
@@ -31,8 +32,9 @@
     border-radius: 15px;
     width: 40%;
     height: 50px;
-    background-color: rgb(132, 168, 223);
-    color: yellow;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
     
   }
 
@@ -48,8 +50,9 @@
     border-radius: 15px;
     width: 40%;
     height: 50px;
-    background-color: rgb(132, 168, 223);
-    color: yellow;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
     
   }
 
@@ -65,7 +68,8 @@
     border-radius: 15px;
     width: 40%;
     height: 50px;
-    background-color: rgb(132, 168, 223);
-    color: yellow;
+    border-color:rgb(71, 132, 223) ;
+    background-color: rgb(255, 206, 73) ;
+    color: rgb(71, 132, 223) ;
     
   }
